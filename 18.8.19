@@ -1,0 +1,14 @@
+tickets = 1
+a = (int(input("Введите количество билетов:")))
+for age in range(a):
+    age = (int(input("Введите возраст посетителя:")))
+    if age < 18:
+        tickets = a * 0
+    elif age >= 18 and age <= 25:
+        tickets = a * 990
+    elif age > 25:
+        tickets = a * 1390
+print("Стоимость Ваших билетов", tickets)
+if a > 3:
+    tickets = tickets - tickets / 100 * 10
+    print("Стоимость Ваших билетов", tickets)
